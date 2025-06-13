@@ -1,0 +1,88 @@
+.todo-detail-title {
+  color: #00040d;
+}
+.todo-detail-container {
+  background: rgba(255,255,255,0.95);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(1, 17, 38, 0.10);
+  color: #011126;
+  padding: 32px;
+  max-width: 80vw;
+  height: 80vh;
+  margin: 40px auto;
+  text-align: left;
+  font-size: 18px;
+  
+}
+
+.todo-detail-title {
+  font-size: 1.2em;
+  margin: 12px 0;
+  word-break: break-word;
+}
+
+.todo-detail h2 {
+  margin-bottom: 24px;
+  color: #232946;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.todo-detail strong {
+  color: #232946;
+}
+
+.todo-detail .status {
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-left: 8px;
+}
+
+.todo-detail .status.completed {
+  color: green;
+}
+.todo-detail .status.pending {
+  color: red;
+}
+
+.todo-detail-btn {
+  margin-right: 12px;
+  padding: 8px 18px;
+  border-radius: 8px;
+  border: none;
+  background: #011126;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 8px;
+}
+
+.todo-detail-btn.mark-completed {
+  background: #22c55e;   
+  color: #fff;
+}
+.todo-detail-btn.mark-pending {
+  background: #f2955e;   
+  color: #011126;
+}
+
+.todo-detail-btn#todo-detail-back-btn {
+  background: #011126;
+  color: #fff;
+}
+
+.todo-detail-btn:hover {
+  opacity: 0.85;
+}
+
+/* Responsive main row */
+/* Mobile styles (up to 600px) */
+@media (max-width: 600px) {
+  .todo-detail-container {
+    max-width: 90vw;
+    padding: 12px;
+    font-size: 15px;
+    margin: 30px auto;
+  }
+}
